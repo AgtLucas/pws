@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:listBeersResponse xmlns:ns2="http://service.megabrew.com.uk/">
+         <return>
+            <amount>8</amount>
+            <description>A beer created by Iron Maiden, brewed by Robinsons</description>
+            <name>Trooper</name>
+            <price>90.0</price>
+            <unitMeasure>Litro</unitMeasure>
+            <volume>dm3</volume>
+         </return>
+         <return>
+            <amount>1</amount>
+            <description>Uma cerveja de trigo, criada pela Cervejaria Bamberg para homenagear a banda de metal, Sepultura, surgida na década de 80.</description>
+            <name>Sepultura Weizen</name>
+            <price>17.0</price>
+            <unitMeasure>Litro</unitMeasure>
+            <volume>dm3</volume>
+         </return>
+         <return>
+            <amount>1</amount>
+            <description>Essa English Pale Ale reverencia o Sex Pistols, uma das mais famosas bandas da Inglatera e também uma das precursoras do punk rock inglês.</description>
+            <name>Kud: God Save The Queen</name>
+            <price>18.0</price>
+            <unitMeasure>Litro</unitMeasure>
+            <volume>dm3</volume>
+         </return>
+      </ns2:listBeersResponse>
+   </S:Body>
+</S:Envelope>
