@@ -6,10 +6,16 @@ import java.util.List;
 import uk.com.megabrew.model.Product;
 
 public class ProductDAO {
+	
+	private static List<Product> products = loadProducts();
+	
+	public List<Product> getProducts() {
+		return products;
+	}
 
-	public List<Product> getBeers() {
+	private static List<Product> loadProducts() {
 		
-		List<Product> beers = new ArrayList<Product>();
+		List<Product> products = new ArrayList<Product>();
 		
 		Product b1 = new Product();
 		b1.setName("Trooper");
@@ -19,7 +25,7 @@ public class ProductDAO {
 		b1.setUnitMeasure("Litro");
 		b1.setVolume("dm3");
 		
-		beers.add(b1);
+		products.add(b1);
 		
 		Product b2 = new Product();
 		b2.setName("Sepultura Weizen");
@@ -29,7 +35,7 @@ public class ProductDAO {
 		b2.setUnitMeasure("Litro");
 		b2.setVolume("dm3");
 		
-		beers.add(b2);
+		products.add(b2);
 		
 		Product b3 = new Product();
 		b3.setName("Kud: God Save The Queen");
@@ -39,10 +45,22 @@ public class ProductDAO {
 		b3.setUnitMeasure("Litro");
 		b3.setVolume("dm3");
 		
-		beers.add(b3);
+		products.add(b3);
 		
-		return beers;
+		return products;
 		
+	}
+	
+	public Product searchProduct(Product product) {
+		Product shot = null;
+		for (Product p : getProducts()) {
+			if(p.getId() == product.getId()) {
+				shot = p;
+				break;
+			}
+		}
+		
+		return shot;
 	}
 	
 }
