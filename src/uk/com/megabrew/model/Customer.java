@@ -12,7 +12,7 @@ public class Customer {
 		super();
 	}
 	
-	public Customer(long id, String name, String username, int phone) {
+	public Customer(long id, String name, String username, String password, int phone) {
 		super();
 		this.id = id;
 		this.name = name;
