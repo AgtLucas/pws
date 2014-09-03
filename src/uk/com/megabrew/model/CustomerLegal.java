@@ -43,5 +43,10 @@ public class CustomerLegal extends Customer {
 		this.cnpj = cnpj;
 	}
 	
+	public CustomerLegal(String cnpj) {
+		super();
+		this.cnpj = cnpj;
+	}
+	
 
 }
