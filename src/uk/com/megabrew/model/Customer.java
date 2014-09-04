@@ -1,5 +1,8 @@
 package uk.com.megabrew.model;
 
+import javax.xml.bind.annotation.XmlSeeAlso;
+
+@XmlSeeAlso({CustomerLegal.class, CustomerNormal.class})
 public class Customer {
 	
 	private int id;
