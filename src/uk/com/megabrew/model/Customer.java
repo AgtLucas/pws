@@ -2,7 +2,7 @@ package uk.com.megabrew.model;
 
 public class Customer {
 	
-	private String id;
+	private int id;
 	private String name;
 	private String username;
 	private String password;
@@ -12,11 +12,21 @@ public class Customer {
 		super();
 	}
 
-	public String getId() {
+	public Customer(int id, String name, String username, String password,
+			int phone) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.phone = phone;
+	}
+
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -52,5 +62,7 @@ public class Customer {
 		this.phone = phone;
 	}
 	
-
+	
+	
+	
 }
