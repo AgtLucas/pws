@@ -3,6 +3,8 @@ package uk.com.megabrew.model;
 public class CustomerLegal extends Customer {
 	
 	private String cnpj;
+	
+	private CustomerType customerType = CustomerType.PUB;
 
 	public CustomerLegal() {
 		super();
@@ -24,6 +26,14 @@ public class CustomerLegal extends Customer {
 
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
+	}
+
+	public CustomerType getCustomerType() {
+		return customerType;
+	}
+
+	public void setCustomerType(CustomerType customerType) {
+		this.customerType = customerType;
 	}
 	
 
